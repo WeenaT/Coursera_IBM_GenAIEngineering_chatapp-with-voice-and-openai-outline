@@ -21,7 +21,7 @@ def speech_to_text_route():
     # Return the response back to the user in JSON format
     response = app.response_class(
         response=json.dumps({'text': text}),
-        status=200
+        status=200,
         mimetype='application/json'
     )
     print(response)

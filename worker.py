@@ -69,7 +69,7 @@ def openai_process_message(user_message):
         ],
         max_completion_tokens=1000
     )
-    print("openai response:":, openai_response)
+    print("openai response:", openai_response)
     # Parse the response to ge tthe response message for our prompt
     response_text = openai_response.choices[0].message.content
     return response_text
